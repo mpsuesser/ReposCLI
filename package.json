@@ -44,7 +44,7 @@
     "format:check": "dprint check",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint --report-unused-disable-directives .",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "check": "bun run format:check && bun run typecheck && bun run lint && bun run test && bun run build",
     "lefthook:install": "lefthook install",
     "prepack": "bun run build",

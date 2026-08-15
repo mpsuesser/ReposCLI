@@ -33,8 +33,7 @@ bun run start --help
 bun run check
 ```
 
-The source command is defined in `src/command.ts`; `src/main.ts` is only the Bun
-runtime boundary.
+The root command and Bun runtime boundary are defined in `src/main.ts`.
 
 ## Release
 
