@@ -16,12 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpsuesser/project-cli.git"
+    "url": "git+https://github.com/mpsuesser/project.git"
   },
   "bugs": {
-    "url": "https://github.com/mpsuesser/project-cli/issues"
+    "url": "https://github.com/mpsuesser/project/issues"
   },
-  "homepage": "https://github.com/mpsuesser/project-cli#readme",
+  "homepage": "https://github.com/mpsuesser/project#readme",
   "keywords": [
     "bun",
     "cli",
