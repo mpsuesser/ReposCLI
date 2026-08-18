@@ -2,6 +2,7 @@ import * as Effect from 'effect/Effect';
 import * as Command from 'effect/unstable/cli/Command';
 
 import { command as name } from './print_name.ts';
+import { command as repos } from './print_repos.ts';
 
 const handler = Effect.fn('Print.run')(function*() {
 	return yield* Effect.succeed('print');
@@ -9,5 +10,5 @@ const handler = Effect.fn('Print.run')(function*() {
 
 /** Print command and its nested commands. */
 export const command = Command.make('print', {}, handler).pipe(
-	Command.withSubcommands([name])
+	Command.withSubcommands([name, repos])
 );
