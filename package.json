@@ -1,13 +1,13 @@
 {
   "$schema": "https://www.schemastore.org/package.json",
-  "name": "@mpsuesser/project-cli",
+  "name": "@mpsuesser/repos-cli",
   "version": "0.0.0",
-  "description": "An Effect-powered project CLI",
+  "description": "An Effect-powered repo CLI",
   "license": "MIT",
   "author": "Marc Suesser",
   "type": "module",
   "bin": {
-    "project": "dist/main.js"
+    "repo": "dist/main.js"
   },
   "files": [
     "dist/main.js",
@@ -16,17 +16,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpsuesser/project.git"
+    "url": "git+https://github.com/mpsuesser/ReposCLI.git"
   },
   "bugs": {
-    "url": "https://github.com/mpsuesser/project/issues"
+    "url": "https://github.com/mpsuesser/ReposCLI/issues"
   },
-  "homepage": "https://github.com/mpsuesser/project#readme",
+  "homepage": "https://github.com/mpsuesser/ReposCLI#readme",
   "keywords": [
     "bun",
     "cli",
     "effect",
-    "project"
+    "repo"
   ],
   "packageManager": "bun@1.3.14",
   "engines": {
@@ -39,7 +39,7 @@
     "dev": "bun --watch src/main.ts",
     "start": "bun src/main.ts",
     "build": "bun build src/main.ts --target=bun --packages=external --outdir=dist",
-    "build:binary": "bun build src/main.ts --compile --outfile=dist/project",
+    "build:binary": "bun build src/main.ts --compile --outfile=dist/repo",
     "format": "dprint fmt",
     "format:check": "dprint check",
     "typecheck": "tsc --noEmit",

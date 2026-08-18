@@ -6,7 +6,7 @@
   "include-component-in-tag": false,
   "packages": {
     ".": {
-      "package-name": "@mpsuesser/project-cli"
+      "package-name": "@mpsuesser/repos-cli"
     }
   }
 }

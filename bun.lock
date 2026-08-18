@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@mpsuesser/project-cli",
+      "name": "@mpsuesser/repos-cli",
       "dependencies": {
         "@effect/platform-bun": "4.0.0-rc.109",
         "effect": "4.0.0-rc.109",
