@@ -23,6 +23,23 @@ Standalone executables for macOS, Linux, and Windows are attached to every
 require Bun to be installed. Download the archive for your platform, verify it
 against `SHA256SUMS`, and place `repo` (or `repo.exe`) on your `PATH`.
 
+## Check Conventions
+
+Check the current repository, or pass another repository path:
+
+```sh
+repo check
+repo check ~/repos/example
+```
+
+The repository kind in `repo.toml` selects its convention suite. Violations are
+printed as actionable findings and produce exit code `1`. Use `--jsonl` for one
+schema-encoded JSON object per convention:
+
+```sh
+repo --jsonl check ~/repos/example
+```
+
 ## Develop
 
 Requires [Bun](https://bun.com/) 1.3.14 or newer.
